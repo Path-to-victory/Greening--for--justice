@@ -176,3 +176,60 @@ footer {
     color: white;
     padding: 80px 20px;
 }
+/* ===== TOP HEADER ===== */
+.top-header {
+    background: #1B5E20;
+    color: white;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 26px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ===== SIDE MENU ===== */
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #145A32;
+    overflow-x: hidden;
+    transition: 0.3s ease;
+    padding-top: 60px;
+    z-index: 2000;
+}
+
+.side-menu a {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.side-menu a:hover {
+    background: #43A047;
+}
+
+/* Overlay effect when menu opens */
+.side-menu.open {
+    width: 250px;
+}
