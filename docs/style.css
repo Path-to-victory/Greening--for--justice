@@ -391,3 +391,8 @@ footer {
     background: #092914; /* even darker strip */
     font-size: 13px;
     }
+.footer-wave svg {
+    display: block;
+    width: 100%;
+    height: 80px;
+}
