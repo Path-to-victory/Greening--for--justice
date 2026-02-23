@@ -313,3 +313,28 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
+/* ===== IMPACT SECTION ===== */
+.impact {
+    background: #1B5E20;
+    color: white;
+    padding: 60px 20px;
+}
+
+.impact-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.impact-box h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.impact-box p {
+    font-size: 16px;
+    opacity: 0.9;
+    }
