@@ -509,3 +509,46 @@ footer {
 .cta-button:hover {
     background: #A5D6A7;
     }
+/* ===== VOLUNTEER SECTION ===== */
+
+.volunteer {
+    padding: 70px 20px;
+    background: #F1F8E9;
+    text-align: center;
+}
+
+.volunteer form {
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.volunteer input,
+.volunteer textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.volunteer button {
+    background: #1B5E20;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.volunteer button:hover {
+    background: #43A047;
+}
+
+.form-message {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #1B5E20;
+    }
