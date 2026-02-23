@@ -218,5 +218,16 @@ photoInput.addEventListener("change", function() {
     });
 });
     </script>
+    <script>
+const form = document.getElementById("volunteerForm");
+const message = document.getElementById("formMessage");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    message.textContent = "Thank you for volunteering! We will contact you soon 🌿";
+    form.reset();
+});
+    </script>
 </body>
 </html>
