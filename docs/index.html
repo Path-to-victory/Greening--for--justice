@@ -88,7 +88,16 @@
             <a href="#" class="btn">Join Us</a>
         </section>
 
-        <br>
+
+        <!-- PHOTO UPLOAD SECTION -->
+<section id="gallery-upload">
+    <h2>Share Your Green Moments 🌿</h2>
+    <p>Upload photos of your environmental activities and inspire others.</p>
+
+    <input type="file" id="photoInput" accept="image/*" multiple>
+    
+    <div id="photoPreview" class="photo-grid"></div>
+</section>
 
         <!-- Contact Section -->
         <section id="contact">
@@ -108,5 +117,25 @@ function toggleMenu() {
     document.getElementById("sideMenu").classList.toggle("open");
 }
 </script>
+    <script>
+const photoInput = document.getElementById("photoInput");
+const preview = document.getElementById("photoPreview");
+
+photoInput.addEventListener("change", function() {
+    preview.innerHTML = "";
+
+    Array.from(this.files).forEach(file => {
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+            const img = document.createElement("img");
+            img.src = e.target.result;
+            preview.appendChild(img);
+        }
+
+        reader.readAsDataURL(file);
+    });
+});
+    </script>
 </body>
 </html>
