@@ -10,21 +10,26 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>🌍 Green Earth Initiative</h1>
-        <p>Together for a Cleaner, Healthier Planet</p>
-    </header>
+    <!-- HEADER -->
+<header class="top-header">
+    <div class="nav-container">
+        <div class="menu-icon" onclick="toggleMenu()">
+            ☰
+        </div>
+        <div class="logo">
+            🌿 Green Earth Initiative
+        </div>
+    </div>
+</header>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#mission">Our Mission</a></li>
-            <li><a href="#action">Take Action</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+<!-- SIDE MENU -->
+<div id="sideMenu" class="side-menu">
+    <a href="#" onclick="toggleMenu()">Home</a>
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#mission" onclick="toggleMenu()">Our Mission</a>
+    <a href="#action" onclick="toggleMenu()">Take Action</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+</div>
     </nav>
 <section class="hero">
     <div class="container" style="text-align:center;">
