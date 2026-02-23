@@ -471,3 +471,41 @@ footer {
         text-align: center;
     }
     }
+/* ===== CTA SECTION ===== */
+
+.cta {
+    background: linear-gradient(to right, #1B5E20, #145A32);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.cta h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    margin-bottom: 30px;
+    font-size: 17px;
+    opacity: 0.95;
+}
+
+.cta-button {
+    background: white;
+    color: #1B5E20;
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #A5D6A7;
+    }
