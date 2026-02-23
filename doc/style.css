@@ -1,40 +1,116 @@
-/* ===== Reset Some Default Styles ===== */
+/* ===== GLOBAL ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ===== Body Styling ===== */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #E8F5E9;
+    color: #1C1C1C;
+    line-height: 1.7;
 }
 
-/* ===== Container ===== */
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-    overflow: hidden;
-}
-
-/* ===== Header ===== */
+/* ===== HEADER ===== */
 header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
+    background: linear-gradient(to right, #1B5E20, #2E7D32);
+    color: white;
     text-align: center;
+    padding: 40px 20px;
 }
 
-/* ===== Navigation ===== */
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ===== NAVIGATION ===== */
 nav {
-    background: #444;
-    padding: 10px 0;
+    background: #145A32;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #A5D6A7;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #1B5E20;
+    margin-bottom: 15px;
+    border-left: 5px solid #43A047;
+    padding-left: 10px;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: #1B5E20;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #43A047;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #1B5E20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    }
 nav ul {
     list-style: none;
     text-align: center;
