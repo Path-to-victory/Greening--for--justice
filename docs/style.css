@@ -396,3 +396,34 @@ footer {
     width: 100%;
     height: 80px;
 }
+/* ===== PROJECTS ===== */
+
+.projects {
+    padding: 60px 20px;
+    background: #F1F8E9;
+}
+
+.project-grid {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #1B5E20;
+    margin-bottom: 10px;
+}
