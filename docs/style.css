@@ -652,3 +652,8 @@ footer {
   height: 200px;
   object-fit: cover; /* Prevents distortion */
 }
+.photo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
