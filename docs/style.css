@@ -665,3 +665,14 @@ footer {
   width: 100%;
   height: auto;
 }
+#submitBtn {
+  opacity: 0.3;
+  font-weight: normal;
+  transition: 0.3s;
+}
+
+#submitBtn.active {
+  opacity: 1;
+  font-weight: bold;
+  cursor: pointer;
+}
