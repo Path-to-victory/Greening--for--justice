@@ -657,3 +657,7 @@ footer {
   height: auto;
   display: block;
 }
+.profile-photo {
+  width: 300px;
+  height: auto;
+}
