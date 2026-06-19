@@ -144,14 +144,15 @@ Together, we are proving that small actions can create lasting impact. Let us co
     <h2>Volunteer With Us</h2>
     <p>Fill out the form below and we’ll get in touch with you.</p>
     
-<a href="#volunteer" class="cta-button">Volunteer Now</a>
-    <form id="volunteerForm">
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <input type="tel" placeholder="Phone Number" required>
-        <textarea placeholder="Why do you want to volunteer?" rows="4" required></textarea>
-        <button type="submit">Submit</button>
-    </form>
+<form action="https://formspree.io/f/abcdwxyz" method="POST">
+  
+  <input type="text" name="name" placeholder="Full Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="text" name="skills" placeholder="Skills">
+
+  <button type="submit">Volunteer</button>
+
+</form>
 
     <p id="formMessage" class="form-message"></p>
 </section>
