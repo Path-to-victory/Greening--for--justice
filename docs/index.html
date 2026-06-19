@@ -157,15 +157,33 @@ Together, we are proving that small actions can create lasting impact. Let us co
 </section>
 
         <!-- PHOTO UPLOAD SECTION -->
-<section id="gallery-upload">
-    <h2>Share Your Green Moments 🌿</h2>
-    <p>Upload photos of your environmental activities and inspire others.</p>
+<button id="upload_widget">Share Your Environmental Moments</button>
 
-    <input type="file" id="photoInput" accept="image/*" multiple>
-    
-    <div id="photoPreview" class="photo-grid"></div>
-</section>
+<script src="https://upload-widget.cloudinary.com/global/all.js"></script>
 
+<script>
+const widget = cloudinary.createUploadWidget(
+  {
+    cloudName: "YOUR_CLOUD_NAME",
+    uploadPreset: "YOUR_UPLOAD_PRESET"
+  },
+  (error, result) => {
+    if (!error && result && result.event === "success") {
+      console.log("Uploaded:", result.info.secure_url);
+
+      // Example: display the uploaded image
+      const img = document.createElement("img");
+      img.src = result.info.secure_url;
+      img.style.width = "300px";
+      document.body.appendChild(img);
+    }
+  }
+);
+
+document
+  .getElementById("upload_widget")
+  .addEventListener("click", () => widget.open());
+</script>
 
     </main>
 <!-- WAVE -->
