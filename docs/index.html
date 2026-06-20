@@ -273,18 +273,3 @@ const form = document.getElementById("volunteerForm");
 const inputs = form.querySelectorAll("input");
 const button = document.getElementById("submitBtn");
 
-function checkForm() {
-  let allFilled = true;
-
-  inputs.forEach(input => {
-    if (!input.value.trim()) {
-      allFilled = false;
-    }
-  });
-  
-}
-
-inputs.forEach(input => {
-  input.addEventListener("input", checkForm);
-});
-</script>
